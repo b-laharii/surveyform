@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IT=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    h1 {
+      text-align: center;
+      color:purple;
+      text-decoration-line:underline;
+    }
+
+    form {
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #text,
+    #email,
+    #number,
+    #select,
+    #name {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid;
+      border-radius: 3px;
+      color:black;
+    }
+
+    fieldset {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    #radio,
+    #checkbox {
+      margin: 5px;
+    }
+    #description{
+      color:purple;
+      margin:20px;
+    }
+    p{
+      color:purple;
+    }
+    #name-label,#email-label,#number-label,#movie,#hobbies{
+      color:purple;
+    }
+#submit{
+  background-color:purple;
+}
+  </style>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill out the following</p>
+
+    <form id="survey-form" action="#" method="post">
+      <!-- name -->
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+<br>
+    <!-- email -->
+    <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+  <br>
+    <!-- age -->
+    <label id="number-label">Age: 
+      <input type="number" id="number" min="12" max="100" placeholder="enter your age"></label><br>
+    <!-- gender -->
+    <p>Gender:</p>
+    <select id="dropdown">
+      <option>Select</option>
+      <option>Male</option>
+      <option>Female</opyion>
+      <option>Others</opyion>
+    </select>
+    <!-- cat or dog person -->
+     <p>Cat or Dog person:</p>
+     <input type="radio" id="cat or dog" name="cat or dog" value="cat">
+            <label for="cat">cat</label>
+<input type="radio" id="cat or dog" name="cat or dog" value="dog">
+            <label for="dog">dog</label>
+   <input type="radio" id="cat or dog" name="cat or dog" value="cat">
+            <label for="both">both</label>
+   
+    <br>
+    <br>
+     <!-- favcolor -->
+    
+            <legend>Favorite Color:</legend><br>
+            <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">black</label>
+       
+    <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">yellow</label>
+       
+        <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">purple</label>
+       
+        <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">green</label>
+            <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">orange</label>
+        <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">blue</label>
+      <input type="radio" id="yellow" name="radio-group" value="radio2">
+            <label for="radio2">pink</label>
+     <!-- country -->
+    <p>Which country are you from:</p>
+    <input type="radio" value="america" name="country" id="country america">America</input>
+    <input type="radio" value="china" name="country" id="country china">China</input>
+    <input type="radio" value="germany" name="country" id="country germany">Germany</input>
+    <input type="radio" value="india" name="country" id="country india">India</input>
+    <input type="radio" value="japan" name="country" id="country japan">Japan</input>
+    <input type="radio" value="south korea" name="country" id="country south korea">South Korea</input>
+    <input type="radio" value="usa" name="country" id="country usa">USA</input>
+    <input type="radio" value="india" name="country" id="country others">Others</input>
+    <br><br>
+  
+<!-- checkbox -->
+    <label id="movie">Pick your fav type of movie genre:</label>
+     <label for="action">
+        <input type="checkbox" id="action" name="checkbox-group" value="action">
+       action </label>
+
+<label for="comedy">comedy
+        <input type="checkbox" id="comedy" name="checkbox-group" value="comedy">
+        </label>
+         <label for="sci-fi">sci-fi
+         <input type="checkbox" id="sci-fi" name="checkbox-group" value="sci-fi">
+       </label>
+       <label for="fictional">fictional
+         <input type="checkbox" id="fictional" name="checkbox-group" value="fictional">
+        </label>
+<br><br>
+<!-- textarea -->
+<label id="hobbies">Tell about your hobbies:</label>
+        <textarea id="hobbies" name="hobbies" placeholder="Enter your hobbies"></textarea>
+<br>
+    <!-- submit -->
+    <input id="submit"  type="submit"></input>
+
+  </form>
+  </label>
+</body>
+
+</html>
